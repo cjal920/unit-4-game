@@ -1,0 +1,41 @@
+#red    {
+    background: red;
+    color: #ffffff;
+    text-align: center;
+}
+
+#blue    {
+    background: blue;
+    color: #ffffff;
+    text-align: center;
+}
+
+#yellow    {
+    background: yellow;
+    color: #ffffff;
+    text-align: center;
+}
+
+#green    {
+    background: green;
+    color: #ffffff;
+    text-align: center;
+}
+
+#target, 
+#score     {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 10px;
+    background: #ffffff;
+}
+
+#wins, 
+#losses     {
+    height: 50px;
+    width: 50px;
+    background: #ffffff;
+}
