@@ -12,41 +12,62 @@
 </head>
 <body>
 
+
+    
+        <div class="container">
+            <div class="row">
+  
+        <div class="col-md-12">
+            <h3>BIDDER BEWARE!</h3>
+            <p>The object of this game is to make your bid match the target price. And here's 
+                how you do that. The precious stones at the bottom of the screen each have a 
+                current market value. Your job is to select the right stones in the right 
+                quantities so that your bid equals the target price. How do you know each 
+                stone's value? You don't. Like all market values, like the target price, they 
+                change with each game. Only by clicking them will you discover their value. But 
+                do be careful. Just as the only way to win this game is by matching the target 
+                price with your bid, the only way to lose is by exceeding it. Just like 
+                The Price Is Right. Good Luck!
+            </p>
+        </div>
+  
+        
+  
+        </div>
+      </div>
+    
     
 
   <div class="jumbotron">
       <div class="container">
           <div class="row">
 
-      <div class="col-md-6">
-          <h3>TARGET</h3>
-      </div>
-
-      <div class="col-md-6">
+      <div class="col-md-4">
+          <h3>TARGET PRICE</h3>
           <div id="target"></div>
       </div>
 
+      <div class="col-md-4">
+           <h3>YOUR BID</h3>
+           <div id="score"></div>
+      </div>
+
+      <div class="col-md-2">
+            <h4>WINS</h4>
+            <div id="wins"></div>
+        </div>
+  
+        <div class="col-md-2">
+            <h4>LOSSES</h4>
+            <div id="losses"></div>
+        </div>
+
       </div>
     </div>
   </div>
 
 
 
-  <div class="jumbotron">
-      <div class="container">
-          <div class="row">
-
-      <div class="col-md-6">
-          <h3>SCORE</h3>
-      </div>
-
-      <div class="col-md-6">
-          <div id="score"></div>
-      </div>
-
-      </div>
-    </div>
-  </div>
 
 <div id="verdict">VERDICT</div>
 
@@ -60,47 +81,23 @@
             </div>
 
             <div class="col-md-3">
-                <button id="blue">BLUE</button>
-              </div>
+                <button id="blue">RED</button>
+            </div>
 
-              <div class="col-md-3">
-                  <button id="yellow">YELLOW</button>
-                </div>
+            <div class="col-md-3">
+                <button id="yellow">YELLOW</button>
+            </div>             
 
-                <div class="col-md-3">
-                    <button id="green">GREEN</button>
-                  </div>
+            <div class="col-md-3">
+                <button id="green">GREEN</button>
+            </div>                
 
           </div>
         </div>
       </div>
-
-
-      <div class="jumbotron">
-          <div class="container">
-              <div class="row">
-    
-          <div class="col-md-6">
-              <h4>WINS</h4>
-              <div id="wins"></div>
-          </div>
-    
-          <div class="col-md-6">
-              <h4>LOSSES</h4>
-              <div id="losses"></div>
-          </div>
-    
-          </div>
-        </div>
-      </div>
-
-
 
 
       <script src="assets/javascript/game.js"></script>
-
-
-
 
 
 

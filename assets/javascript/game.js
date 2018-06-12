@@ -14,8 +14,6 @@ $(document).ready(function(){
   var wins = 0;
   var losses = 0;
 
-
- 
 // pick a random number between 19 and 120. 
 
 function newGame() {
