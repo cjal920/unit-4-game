@@ -4,6 +4,14 @@
     text-align: center;
 }
 
+#ruby,
+#sapphire,
+#citrine,
+#emerald   {
+    height: 100px;
+    width: 100px;
+}
+
 #blue    {
     background: blue;
     color: #ffffff;
@@ -37,5 +45,9 @@
 #losses     {
     height: 50px;
     width: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 5px;
     background: #ffffff;
 }
