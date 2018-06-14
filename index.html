@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <!--<link rel="stylesheet" type="text/css" href="assets/css/reset.css">-->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
   <script src="https://code.jquery.com/jquery.js"></script>
   
 </head>
@@ -16,20 +17,8 @@
             <div class="row">
   
         <div class="col-md-12">
-            <h3>CRYSTAL COLLECTOR!</h3>
-            <p>The object of this game is to make your score match the target number by collecting
-                crystals. And here's how you do that. The precious stones at the bottom of the 
-                screen each have a numerical value. Your job is to select the right stones
-                in the right quantities so that your score adds up to the target. How do you 
-                know each stone's value? Well, you don't. Like market values, like the target you're
-                aiming for, they fluctuate. And each game they're different. Only by clicking them 
-                will you know their value. But do be careful. Just as the only way to win this game 
-                is by matching the target with your score, the only way to lose is by exceeding 
-                it. Like The Price Is Right. So don't aim too high! And good luck!
-            </p>
+            <h1>CRYSTAL COLLECTOR!</h1>
         </div>
-  
-        
   
         </div>
       </div>
@@ -40,24 +29,36 @@
       <div class="container">
           <div class="row">
 
-      <div class="col-md-4">
-          <h3>TARGET PRICE</h3>
+      <div class="col-md-2">
+          <h3>TARGET</h3>
           <div id="target"></div>
-      </div>
-
-      <div class="col-md-4">
-           <h3>YOUR BID</h3>
-           <div id="score"></div>
+          <br>
+          <h4>WINS</h4>
+          <div id="wins"></div>
       </div>
 
       <div class="col-md-2">
-            <h4>WINS</h4>
-            <div id="wins"></div>
-        </div>
+           <h3>SCORE</h3>
+           <div id="score"></div>
+           <br>
+           <h4>LOSSES</h4>
+           <div id="losses"></div>
+      </div>
+
   
-        <div class="col-md-2">
-            <h4>LOSSES</h4>
-            <div id="losses"></div>
+        <div class="col-md-8">
+            <p>The object of this game is to make your score match the target number by collecting
+                precious stones. And here's how it's done. The ruby, sapphire, citrine and emerald at the 
+                bottom of the screen each have a numerical value. Your job is to select the right 
+                stones in the right quantities so that your score adds up to the target. How do you 
+                know each stone's value? Well, you don't. Like market values, like the target you're
+                aiming for, they fluctuate; each game they're different. Only by clicking them 
+                will you know their value. But do be careful. Just as the only way to win this game 
+                is by matching the target with your score, the only way to lose is by exceeding 
+                it. Just like the daytime classic <em>The Price Is Right</em>. So aim high, but not too 
+                high. And good luck!
+            </p>
+            
         </div>
 
       </div>
@@ -65,9 +66,7 @@
   </div>
 
 
-
-
-<div id="verdict">VERDICT</div>
+<div id="verdict"></div>
 
       <div class="jumbotron">
 
@@ -93,6 +92,14 @@
           </div>
         </div>
       </div>
+
+
+<audio id="audio-win" autoplay>
+        <source src="assets/audio/win.mp3" type="audio/mp3">
+</audio>
+<audio id="audio-lose" autoplay>
+        <source src="assets/audio/lose.mp3" type="audio/mp3">
+</audio>
 
 
       <script src="assets/javascript/game.js"></script>

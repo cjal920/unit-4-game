@@ -1,30 +1,22 @@
 $(document).ready(function(){
 
     // jQuery methods go here...
-  var numRandom = (Math.floor(Math.random() * 102) + 19);
+  var numRandom;
 
-  $("#target").html(numRandom);
-
-  var numRed = (Math.floor(Math.random() * 12) + 1);
-  var numBlue = (Math.floor(Math.random() * 12) + 1);
-  var numYellow = (Math.floor(Math.random() * 12) + 1);
-  var numGreen = (Math.floor(Math.random() * 12) + 1);
-  console.log(numRed);
-  console.log(numBlue);
-  console.log(numYellow);
-  console.log(numGreen);
+  var numRed;
+  var numBlue;
+  var numYellow;
+  var numGreen;
 
   var score = 0; 
   var wins = 0;
   var losses = 0;
-
 
 // pick a random number between 19 and 120. 
 
 function newGame() {
     numRandom = (Math.floor(Math.random() * 102) + 19);
     $("#target").html(numRandom);
-    console.log(numRandom);
     numRed = (Math.floor(Math.random() * 12) + 1);
     numBlue = (Math.floor(Math.random() * 12) + 1);
     numYellow = (Math.floor(Math.random() * 12) + 1);
