@@ -58,3 +58,7 @@ p {
     color: #f50606;
     background: #020202;
 }
+
+#verdict    {
+    font-family: 'Righteous', cursive;
+}

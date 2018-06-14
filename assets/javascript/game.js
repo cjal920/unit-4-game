@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-    // jQuery methods go here...
   var numRandom;
 
   var numRed;
@@ -11,8 +10,6 @@ $(document).ready(function(){
   var score = 0; 
   var wins = 0;
   var losses = 0;
-
-// pick a random number between 19 and 120. 
 
 function newGame() {
     numRandom = (Math.floor(Math.random() * 102) + 19);
@@ -27,27 +24,19 @@ function newGame() {
     $("#losses").html(losses);
     }
 
-
-// assign four random numbers between 1 and 12 to four different colored crystals.
-    // pick first random number between 1 and 12. number equals red.
-
-   // var numRed = (Math.floor(Math.random() * 12) + 1);
-
-
     $("#ruby").on("click", function() {
         score = numRed + score;
-        console.log("new score:" + score);
         $("#score").html(score);
 
         if (score == numRandom) {
-            $("#verdict").html("<h2>YOU WIN<h2>")
+            $("#verdict").html("<h2>SPOT ON!<h2>").css("color", "#08e62d");
             wins++;
             $("#wins").html(wins);
             newGame()
         }
 
         else if (score > numRandom) {
-            $("#verdict").html("<h2>YOU LOSE<h2>")
+            $("#verdict").html("<h2>OOPS!<h2>").css("color", "#f50606");
             losses++;
             $("#losses").html(losses);
             newGame()
@@ -56,18 +45,17 @@ function newGame() {
 
     $("#sapphire").on("click", function() {
         score = numBlue + score;
-        console.log("new score:" + score);
         $("#score").html(score);
 
         if (score == numRandom) {
-            $("#verdict").html("<h2>YOU WIN<h2>")
+            $("#verdict").html("<h2>SPOT ON!<h2>").css("color", "#08e62d");
             wins++;
             $("#wins").html(wins);
             newGame()
         }
 
         else if (score > numRandom) {
-            $("#verdict").html("<h2>YOU LOSE<h2>")
+            $("#verdict").html("<h2>OOPS!<h2>").css("color", "#f50606");
             losses++;
             $("#losses").html(losses);
             newGame()
@@ -76,18 +64,17 @@ function newGame() {
 
     $("#citrine").on("click", function() {
         score = numYellow + score;
-        console.log("new score:" + score);
         $("#score").html(score);
 
         if (score == numRandom) {
-            $("#verdict").html("<h2>YOU WIN<h2>")
+            $("#verdict").html("<h2>SPOT ON!<h2>").css("color", "#08e62d");
             wins++;
             $("#wins").html(wins);
             newGame()
         }
 
         else if (score > numRandom) {
-            $("#verdict").html("<h2>YOU LOSE<h2>")
+            $("#verdict").html("<h2>OOPS!<h2>").css("color", "#f50606");
             losses++;
             $("#losses").html(losses);
             newGame()
@@ -96,18 +83,17 @@ function newGame() {
 
     $("#emerald").on("click", function() {
         score = numGreen + score;
-        console.log("new score:" + score);
         $("#score").html(score);
 
         if (score == numRandom) {
-            $("#verdict").html("<h2>YOU WIN<h2>")
+            $("#verdict").html("<h2>SPOT ON!<h2>").css("color", "#08e62d");
             wins++;
             $("#wins").html(wins);
             newGame()
         }
 
         else if (score > numRandom) {
-            $("#verdict").html("<h2>YOU LOSE<h2>")
+            $("#verdict").html("<h2>OOPS!<h2>").css("color", "#f50606");
             losses++;
             $("#losses").html(losses);
             newGame()
@@ -115,56 +101,5 @@ function newGame() {
     })
 
     newGame()
-
-       
-
-
-
-
-
-  /*
     
-    var numRed = (Math.floor(Math.random() * 12) + 1);
-
-    console.log(numRed);
-    
-    
-    // pick second random number between 1 and 12. number equals blue.
-
-    var numBlue = (Math.floor(Math.random() * 12) + 1);
-
-    console.log(numBlue);
-
-    // pick third random number between 1 and 12. number equals yellow.
-
-    var numYellow = (Math.floor(Math.random() * 12) + 1);
-
-    console.log(numYellow);
-
-    // pick fourth random number between 1 and 12. number equals green.
-
-    var numGreen = (Math.floor(Math.random() * 12) + 1);
-
-    console.log(numGreen);
-
-// show total number of wins, losses and score. each starts at 0.
-
-    var wins = 0;
-    var losses = 0;
-    var score = 0;
-
-// when player clicks a crystal, add its number to score.
-
-// if score == numRandom, player wins.
-
-    wins++;
-
-// if score > numRandom, player loses.
-
-    losses++;
-
-// when score => numRandom, game over. pick new random numbers for 
-
-*/
-
 });
